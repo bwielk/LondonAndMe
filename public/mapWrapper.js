@@ -20,4 +20,12 @@ MapWrapper.prototype = {
     this.addMarker(position);
     }.bind(this));
   },
+
+  setCenter: function(coords){
+    var center = new google.maps.LatLng(coords);
+  },
+
+  moveMeToChicago: function(){
+    this.setCenter(41.875715, -87.624206);
+  }
 }
